@@ -10,13 +10,17 @@ body{
     float:left;
     margin:1.6%;
     border-radius: 5px;
+    background-color: #43ba4c;
 }
 
 h1{
+	margin:0%;
     text-align: center;
     text-transform: uppercase;
     line-height: 1em;
     padding:0.1% 0%;
+    width:100%;
+    background:#43ba4c;
 }
 
 #colorToDisplay{
@@ -24,18 +28,24 @@ h1{
     font-size: 1.6em;
 }
 
-.nav-left{
-    width:50%;
-    padding: 0% 3%; 
+.nav-left {
+    width: 33%;
+    font-size: 20px;
+    padding: 0% 20% 0% 5%;
+}
+
+.nav-right {
+    width: 33%;
+    padding: 0% 0%;
+    text-align: right;
+    float: right;
     font-size: 20px;
 }
 
-.nav-right{
-   width:50%;
-   padding: 0% 3%;
-   text-align: right;
-   float:right;
-   font-size: 20px;
+.nav-mid {
+    width: 30%;
+    margin: 0% 32%;
+    padding: 0% 12%;
 }
 
 nav{
@@ -56,3 +66,22 @@ nav{
     height:600px;
     margin:2% auto;
 }
+
+@media only screen and (min-width:320px) and (max-width: 600px) {
+    h1{
+        width:140%;
+    }
+
+    nav{
+        width:140%;
+    }
+  }
+
+
+/*Display message after winning*/
+  #message{
+      width:100%;
+      margin: 0% auto;
+      color:#f2f2f2;
+      font-size: 30px;
+  }

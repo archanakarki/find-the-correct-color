@@ -1,5 +1,6 @@
 var h1 = document.getElementsByTagName("h1")[0];
 var squares = document.getElementsByClassName("square");
+var message = document.querySelector("#message");
 var colorToDisplay = document.querySelector("#colorToDisplay");
 
 
@@ -13,6 +14,7 @@ var rgbColorCode;
 var colors = [];
 var pickedColor;
 var pickedNumber;
+
 
 
 defaultState();
@@ -38,7 +40,7 @@ defaultState();
     EventListeners for New Colors
     -------------------------------------------------------------------------------------
     */
-    newColors.addEventListener("click", function(){
+var newColorsClicked =  newColors.addEventListener("click", function(){
         location.reload();
         generateColors();
         generateColorsArray();
@@ -55,10 +57,9 @@ defaultState();
     -------------------------------------------------------------------------------------
     */
    easy.addEventListener("click", function(){
-    squares.length = 3;
-    for(i = 3; i < squares.length; i++){
+    for(i = 2; i < squares.length-1; i++){   
         squares[i].style.display = "none";
-    }     
+    }   
     });
 
     /*-------------------------------------------------------------------------------------*/
@@ -137,8 +138,10 @@ defaultState();
                     else{
                         for(var i = 0; i < 6; i++){
                             squares[i].style.backgroundColor = pickedColor;  
-                            //colorToDisplay.style.backgroundColor = pickedColor; 
+                            colorToDisplay.style.color = "white"; 
                             h1.style.background = pickedColor; 
+                            message.style.background = pickedColor;
+                            message.innerHTML = "Correct!";
                         }
                     }
                 });
@@ -160,6 +163,8 @@ defaultState();
     //console.log(pickedNumber);
     pickedColor = colors[pickedNumber-1];
     colorToDisplay.innerHTML = pickedColor;
+
+
     }
     /*-------------------------------------------------------------------------------------*/
 
