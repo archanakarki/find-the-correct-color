@@ -1,0 +1,21 @@
+{
+  "name": "find-the-correct-color",
+  "version": "1.0.0",
+  "description": "This mini-game is made based on the idea of one of the courses I am taking. However, the codes are the genuine work. In this game, you have to guess the correct color based on the RGB color code visible at the header. Every click on the wrong color could make the color box disappear while with the correct color all the vanished boxes will reappear and have same color as the correct color.",
+  "main": "colorGame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "npm run start",
+    "build" : "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archanakarki/Find-the-correct-color.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archanakarki/Find-the-correct-color/issues"
+  },
+  "homepage": "https://github.com/archanakarki/Find-the-correct-color#readme"
+}
